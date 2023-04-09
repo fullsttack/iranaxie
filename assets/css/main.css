@@ -1,0 +1,91 @@
+/* fonts */
+@font-face{
+    font-family: 'light';
+    src: url(../fonts/light.woff2) format('woff2');
+}
+
+@font-face{
+    font-family: 'medium';
+    src: url(../fonts/medium.woff2) format('woff2');
+}
+
+.font-sans-light{
+    font-family: light;
+}
+
+.font-sans-medium{
+    font-family: medium;
+}
+
+/* body */
+body{
+    background: #fafafa;
+}
+
+/* form */
+.form,
+.form-group,
+.form-label,
+.form-control{
+    float: right;
+    width: 100%;
+}
+
+    .form-label,
+    .form-control{
+        direction: rtl;
+        text-align: right;
+        font: 14px medium;
+        color: #777;
+    }
+
+    .form-control{
+        padding: 15px;
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 10px;
+    }
+
+/* thumb */
+.thumb{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+/* transition */
+.fade-enter-active,
+.fade-leave-active{
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to{
+  opacity: 0;
+}
+
+/* icon */
+@font-face{
+    font-family: icon;
+    src: url(../fonts/icon.woff) format('woff');
+}
+
+.icon{
+    font-family: icon;
+}
+
+.icon-user:before{
+    content: '\e93b';
+}
+
+.icon-bell:before{
+    content: '\e904';
+}
+
+.icon-left:before{
+    content: '\e91d';
+}
+
+.icon-dash:before{
+    content: '\e90e';
+}
