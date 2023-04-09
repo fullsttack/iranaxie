@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "PORT=8004 HOST=127.0.0.1 node .output/server/index.mjs",
     "generate": "nuxt generate"
   },
   "dependencies": {
